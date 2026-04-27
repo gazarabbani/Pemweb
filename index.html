@@ -7,134 +7,29 @@
         <meta name="author" content="Mochammad Gaza Hadi Rabbani" />
         <meta name="nim" content="F1D02410121" />
 
-        <title>Personal Profile</title>
+        <title>Latihan JS</title>
         <link rel="stylesheet" href="assets/css/style.css" />
     </head>
 
     <body>
-        <header class="header">
-            <div class="container header-flex">
-                <h1>Personal Profile</h1>
+        <div class="card">
+            <h2>Student Card</h2>
 
-                <nav>
-                    <ul class="nav-list">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="page2.html">Contact</a></li>
-                    </ul>
-                </nav>
+            <p id="namaDisplay">Nama: -</p>
+
+            <input type="text" id="namaInput" placeholder="Masukkan nama">
+
+            <p id="NIMDisplay">NIM: -</p>
+
+            <input type="text" id="NIMInput" placeholder="Masukkan NIM">
+
+            <div class="button-group">
+                <button onclick="simpan()" class="btn-simpan">Simpan</button>
+                <button onclick="ubahTema()" class="btn-tema">Ubah Tema</button>
             </div>
-        </header>
 
-        <main class="container">
-            <section class="hero">
-                <img src="assets/img/PasFoto.jpg" alt="Foto Profil Mahasiswa" />
-
-                <div>
-                    <h2>Halo, Saya Gaza</h2>
-
-                    <p>
-                        Saya adalah mahasiswa yang memiliki minat dalam
-                        <strong>Data Analis</strong>, <em>Machine Learning</em>, dan
-                        pengembangan sistem berbasis teknologi modern.
-                    </p>
-                </div>
-            </section>
-
-            <section>
-                <h2>About Me</h2>
-                <ul class="info-list">
-                    <li>Nama : Mochammad Gaza Hadi Rabbani</li>
-                    <li>Jurusan : Teknik Informatika</li>
-                    <li>Universitas : Universitas Brawijaya</li>
-                    <li>Hobi : Basket, Gaming</li>
-                </ul>
-            </section> <br>
-
-            <section class="education">
-                <h2>Education Background</h2>
-                <div class="education-grid">
-                    <div class="edu-card">
-                        <h3>SDN 2 Cakranegara</h3>
-                        <p>Mataram, West Nusa Tenggara</p>
-                        <p>Juli 2012 – Mei 2018</p>
-                    </div>
-
-                    <div class="edu-card">
-                        <h3>MTsN 1 Mataram</h3>
-                        <p>Mataram, West Nusa Tenggara</p>
-                        <p>Juli 2018 – Mei 2021</p>
-                    </div>
-                    
-                </div>
-                <div class="education-grid">
-                    <div class="edu-card">
-                        <h3>MAN 2 Mataram</h3>
-                        <p>Mataram, West Nusa Tenggara</p>
-                        <p>Juli 2021 – Maret 2024</p>
-                    </div>
-
-                    <div class="edu-card">
-                        <h3>Universitas Mataram</h3>
-                        <p>Mataram, West Nusa Tenggara</p>
-                        <p>September 2024 – February 2028</p>
-                        <p>Informatics Engineering</p>
-                        <p>GPA (3.99 of 4.00)</p>
-                    </div>
-                </div>
-            </section>
-
-            <section class="organization">
-                <h2>Organization Experience</h2>
-                <div class="org-card">
-                    <h3>Sekretaris Umum 2026</h3>
-                    <p><strong>Himpunan Mahasiswa Informatika (2026–2027)</strong></p>
-                    <p>
-                    A professional organization of Informatics college students. 
-                    As a leader, I determine planning and strategy, coordination, decision making, delegation, 
-                    communication and conflict management.
-                    </p>
-                </div>
-            </section> <br>
-
-            <section>
-                <h2>My Projects</h2>
-
-                <table>
-                    <tr>
-                        <th>No</th>
-                        <th>Project</th>
-                        <th>Deskripsi</th>
-                    </tr>
-
-                    <tr>
-                        <td>1</td>
-                        <td>Website Profil</td>
-                        <td>Membuat website profil menggunakan HTML dan CSS</td>
-                    </tr>
-
-                    <tr>
-                        <td>2</td>
-                        <td>Sistem Manajemen Toko Buku</td>
-                        <td>Membuat sistem manajemen toko buku sederhana menggunakan PHP</td>
-                    </tr>
-
-                    <tr>
-                        <td>3</td>
-                        <td>Sistem Manajemen Maskapai</td>
-                        <td>Membuat project mengimplementasikan penjualan tiket pesawat menggunakan C++</td>
-                    </tr>
-
-                    <tr>
-                        <td>4</td>
-                        <td>Sistem Manajemen Wahana</td>
-                        <td>Membuat project mengimplementasikan Wahana Permainan menggunakan Java</td>
-                    </tr>
-                </table>
-            </section>
-        </main>
-
-        <footer class="footer">
-            <p>© 2026 Personal Website | Mahasiswa Informatika</p>
-        </footer>
+            <p id="pesan"></p>
+        </div>
+        <script src="script.js"></script>
     </body>
 </html>
